@@ -1,10 +1,10 @@
 /*
- * jQuery Currency Converter  Plugin
+ * jQuery Currency Converter Plugin
  * Version : 1.0
+ * Plugin URL : https://github.com/valllabh/jquery.currency.converter
  * Author URL : http://vallabhjoshi.com
- * Author : Vallabh Joshi
- * Copyright 2014
- * Licensed under GPL Version 3
+ * Author : Vallabh Joshi - copyright 2014
+ * License : GPL Version 3 
  * http://www.opensource.org/licenses/GPL-3.0
  */
 
