@@ -3,10 +3,10 @@ jQuery Currency Converter
 
 jQuery Currency Converter
 
-Plugin uses Yahoo Finance API for current currency rates.
+Plugin uses Yahoo Finance API for realtime currency rates.
 
 
-To initialize currency selector 
+To initialise currency selector
 
 HTML
 ```

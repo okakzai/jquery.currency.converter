@@ -1,10 +1,10 @@
 /*
  * jQuery Currency Converter Plugin
  * Version : 1.0
- * Plugin URL : https://github.com/valllabh/jquery.currency.converter
+ * Plugin URL : https://valllabh.github.io/jquery.currency.converter
  * Author URL : http://vallabhjoshi.com
  * Author : Vallabh Joshi - copyright 2014
- * License : GPL Version 3 
+ * License : GPL Version 3
  * http://www.opensource.org/licenses/GPL-3.0
  */
 
@@ -35,7 +35,7 @@
 				load_currencies.push(settings.base+c);
 			}
 
-			var jqxhr = $.ajax({ 
+			var jqxhr = $.ajax({
 				url : 'http://query.yahooapis.com/v1/public/yql',
 				dataType : 'jsonp',
 				data : {
@@ -105,15 +105,15 @@
 		}
 
 		function formatMoney(n, d, t){
-			c = isNaN(c = Math.abs(settings.decimal)) ? 2 : c, 
-			d = d == undefined ? "." : d, 
-			t = t == undefined ? "," : t, 
-			s = n < 0 ? "-" : "", 
-			i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+			c = isNaN(c = Math.abs(settings.decimal)) ? 2 : c,
+			d = d == undefined ? "." : d,
+			t = t == undefined ? "," : t,
+			s = n < 0 ? "-" : "",
+			i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
 			j = (j = i.length) > 3 ? j % 3 : 0;
 			return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
 		};
-		
+
 		return this;
 	}
 
